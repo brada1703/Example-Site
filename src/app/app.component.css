@@ -28,3 +28,27 @@ header a, header button {
 header a.router-link-active {
   color: White;
 }
+
+@media screen and (min-width: 768px) {
+    .navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-center {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .invisible-small {
+    visibility: hidden;
+  }
+  .padding-small {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .dropdown-menu {
+    min-width: 80px;
+  }
+}

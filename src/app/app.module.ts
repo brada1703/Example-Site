@@ -13,6 +13,7 @@ import { UsersModule } from "./users/users.module";
 
 import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 export function HttpLoaderFactory(http: Http) {
   return new TranslateHttpLoader(http, '/assets/locales/', '.json');
@@ -21,7 +22,8 @@ export function HttpLoaderFactory(http: Http) {
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
